@@ -1,0 +1,12 @@
+﻿  ProjectTable.cpp
+C:\Users\mad_duck\Desktop\Таблицы\ProjectTable\ProjectTable\ProjectTable.cpp(75,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mad_duck\Desktop\Таблицы\ProjectTable\ProjectTable\ProjectTable.cpp(80,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mad_duck\Desktop\Таблицы\ProjectTable\ProjectTable\ProjectTable.cpp(95,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mad_duck\Desktop\Таблицы\ProjectTable\ProjectTable\ProjectTable.cpp(101,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mad_duck\Desktop\Таблицы\ProjectTable\ProjectTable\ProjectTable.cpp(112,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mad_duck\Desktop\Таблицы\ProjectTable\ProjectTable\ProjectTable.cpp(120,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mad_duck\Desktop\Таблицы\ProjectTable\ProjectTable\ProjectTable.cpp(131,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mad_duck\Desktop\Таблицы\ProjectTable\ProjectTable\ProjectTable.cpp(138,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mad_duck\Desktop\Таблицы\ProjectTable\ProjectTable\ProjectTable.cpp(166,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mad_duck\Desktop\Таблицы\ProjectTable\ProjectTable\ProjectTable.cpp(172,21): warning C4018: <: несоответствие типов со знаком и без знака
+  ProjectTable.vcxproj -> C:\Users\mad_duck\Desktop\Таблицы\ProjectTable\Debug\ProjectTable.exe

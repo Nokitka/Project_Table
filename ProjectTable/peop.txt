@@ -1,0 +1,4 @@
+idpeop name age
+0 n 1
+1 m 2
+2 s 3
