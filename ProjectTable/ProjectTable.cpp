@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <conio.h>
 #include <string>
 #include <vector>
@@ -176,7 +176,6 @@ public:
 			output << endl;
 		}
 	}
-
 };
 
 void viewCommands(int parametr) {
@@ -186,7 +185,7 @@ void viewCommands(int parametr) {
 		<< "Commands:" << endl;
 
 	if (parametr == 1) {
-		cout << "1)Save table        2)Delete table        3)Edit table		4)Load table		5)Union table" << endl;
+		cout << "1)Save table        2)Delete table        3)Edit table		4)Load table		5)Union table		6)Average marks" << endl;
 	}
 
 	else if (parametr == 2) {
@@ -194,6 +193,31 @@ void viewCommands(int parametr) {
 	}
 
 	cout << "_____________________________________________________________________________________" << endl;
+}
+
+Table average_mark(string column, Table from, string id) {
+	Table result;
+	for (auto u : from.names_column) {
+		result.names_column.push_back(u);
+	}
+	map<map<string, string>, pair<int, int>> tmp;
+	for (auto u : from.table) {
+		if (u.studprop[from.names_column[0]] == id) {
+			map<string, string> now;
+			for (auto k : u.studprop) {
+				if (k.first != column)
+					now.insert(k);
+			}
+			tmp[now] = { tmp[now].first + stoi(u.studprop[column]), tmp[now].second + 1 };
+		}
+	}
+	for (auto u : tmp) {
+		Person temp;
+		temp.studprop = u.first;
+		temp.studprop[column] = to_string((float)u.second.first / u.second.second);
+		result.table.push_back(temp);
+	}
+	return result;
 }
 
 Table table_ass(string column, Table startTable, Table secondTable) {
@@ -280,6 +304,18 @@ int main(void) {
 
 			Table tmp; tmp.load_file(name);
 			tables[name] = tmp;
+			system("CLS");
+			viewCommands(1);
+		}
+
+		if (command == "Average") {
+			string id;
+			cout << "Enter student's id:";
+			cin >> id;
+			string column;
+			cout << "Enter name of column: ";
+			cin >> column;
+			average_mark(column, tables[name], id).show();
 			system("CLS");
 			viewCommands(1);
 		}
